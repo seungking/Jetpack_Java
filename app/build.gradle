@@ -36,6 +36,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     annotationProcessor 'androidx.room:room-compiler:2.2.2'
 
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
+
     //butterknife
     implementation 'com.jakewharton:butterknife:10.2.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
