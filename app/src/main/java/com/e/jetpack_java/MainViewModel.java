@@ -16,6 +16,8 @@ import java.util.List;
 public class MainViewModel extends AndroidViewModel {
 
     AppDatabase db;
+    public LiveData<List<Todo>> todos;
+    public String newTodo;
 
     public MainViewModel(@NonNull Application application) {
         super(application);
@@ -25,7 +27,7 @@ public class MainViewModel extends AndroidViewModel {
                 // 이거 붙혀주면 메인 쓰레드에서 동작이 가능하다 / 실무에선 사용 x 연습할때 주로사용
                 //main에서 돌리면 성능이 느려질 수 있다.
                 .build();
-
+        todos = getAll();
     }
 
     //db를 직접 다루지 못하도록 한번 더 감싸주기
