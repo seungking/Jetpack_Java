@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
 //        ButterKnife.bind(this);
 
-        MainViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.AndroidViewModelFactory(getApplication())).get(MainViewModel.class);
-        binding.setViewModel(viewModel);
+//        MainViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.AndroidViewModelFactory(getApplication())).get(MainViewModel.class);
+//        MainViewModel viewModel = new ViewModelProvider(this).get(MainViewModel.class);
+//        binding.setViewModel(viewModel);
 
         //UI 갱신
         //livedata obserce
@@ -54,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         //삭제 - title 같은 todo 찾아서 삭제
-        binding.deleteButton.setOnClickListener(v->{
-            viewModel.delete(binding.inputTodo.getText().toString());
-        });
+//        binding.deleteButton.setOnClickListener(v->{
+//            viewModel.delete(binding.inputTodo.getText().toString());
+//        });
 
     }
 
